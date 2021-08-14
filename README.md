@@ -1,28 +1,25 @@
-# covid-tracker-app
+# Covid Tracker App
 
-## Project setup
+Displays the new/total cases and deaths globaly as well as per country
+
+## API
+
+This project uses the [https://covid19api.com](covid19api.com).
+
+## Setup
 
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Run
 
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Build
 
 ```
 npm run build
 ```
-
-### Customize configuration
-
-<<<<<<< HEAD
-See [Configuration Reference](https://cli.vuejs.org/config/)
-=======
-See [Configuration Reference](https://cli.vuejs.org/config/).
-git merge ma
->>>>>>> d264deb508a181dec1739abb3be6e070c5ce071c
