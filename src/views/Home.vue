@@ -1,17 +1,16 @@
 <template>
   <main v-if="!loading">
     <DataTitle :text="title" :dataDate="dataDate" />
-
-    <DataBoxes :stats="stats" />
-
     <CountrySelect @get-country="getCountryData" :countries="countries" />
-
-    <button
-      @click="clearCountryData"
-      class="bg-green-500 text-white rounded py-2 px-4 mt-4 focus:outline-none hover:bg-green-600"
-    >
-      Clear Country
-    </button>
+    <div class="text-center">
+      <button
+        @click="clearCountryData"
+        class="bg-green-500 text-white rounded py-2 px-4 my-4 hover:bg-green-600"
+      >
+        Clear Country
+      </button>
+    </div>
+    <DataBoxes :stats="stats" />
   </main>
   <main class="flex flex-col align-center justify-center text-center" v-else>
     <div class="text-blue-800 text-4xl font-semibold mt-8 mb-5 ">
@@ -38,7 +37,7 @@ export default {
       loading: true,
       title: "Global",
       dataDate: "",
-      status: {},
+      stats: {},
       countries: [],
       loadingImage: require("../assets/loading.gif"),
     };

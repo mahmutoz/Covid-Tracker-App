@@ -1,31 +1,31 @@
 <template>
   <div class="grid md:grid-cols-2 gap-3">
-    <!-- Box-1 -->
-    <div class="shadow-md bg-blue-100 p-10 text-center rounded">
-      <h3 class="text-3xl text-blue-900 font-bold mb-4">
+    <!-- CASES -->
+    <div class="shadow-md bg-indigo-200 p-10 text-center rounded">
+      <h3 class="text-3xl text-indigo-800 font-bold mb-4">
         CASES
       </h3>
       <div class="text-2xl mb-4">
-        <span class="font-bold">New:</span>
+        <span class="font-bold">New Cases:</span>
         {{ comma(stats.NewConfirmed) }}
       </div>
       <div class="text-2xl mb-4">
-        <span class="font-bold">Total:</span>
+        <span class="font-bold">Total Cases:</span>
         {{ comma(stats.TotalConfirmed) }}
       </div>
     </div>
 
-    <!-- Box-2 -->
-    <div class="shadow-md bg-blue-100 p-10 text-center rounded">
-      <h3 class="text-3xl text-blue-900 font-bold mb-4">
+    <!-- DEATHS -->
+    <div class="shadow-md bg-indigo-200 p-10 text-center rounded">
+      <h3 class="text-3xl text-indigo-800 font-bold mb-4">
         DEATHS
       </h3>
       <div class="text-2xl mb-4">
-        <span class="font-bold">New:</span>
+        <span class="font-bold">New Deaths:</span>
         {{ comma(stats.NewDeaths) }}
       </div>
       <div class="text-2xl mb-4">
-        <span class="font-bold">Total:</span>
+        <span class="font-bold">Total Deaths:</span>
         {{ comma(stats.TotalDeaths) }}
       </div>
     </div>
